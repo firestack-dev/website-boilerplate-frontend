@@ -1,2 +1,7 @@
 $primary-color: #000;
 $border-radius: 5px;
+$max-width: 1400px;
+
+@mixin PrimaryButton {
+  background-color: $primary-color;
+}
