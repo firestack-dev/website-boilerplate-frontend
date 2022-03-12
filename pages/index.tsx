@@ -4,7 +4,7 @@ import Meta from '../components/default/Meta';
 const Home: NextPage = () => {
   return (
     <>
-      <Meta title='Site Name | Home' />
+      <Meta title="Site Name | Home" />
       home component here
     </>
   );
