@@ -1,0 +1,14 @@
+.mobileMenu {
+  display: none;
+}
+
+// Mobile media query
+@media screen and (max-width: 800px) {
+  .mobileMenu {
+    display: inherit;
+  }
+
+  .content {
+    display: none;
+  }
+}
