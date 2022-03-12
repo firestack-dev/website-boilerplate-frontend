@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo '👷‍♂️ 🏗️ 🧪 Styling, testing and building your project before committing 👷‍♂️ 🏗️ 🧪'
+echo '👷‍♂️ 🏗️ 🧪 Styling, testing and building project before commit 👷‍♂️ 🏗️ 🧪'
 
 # Check Prettier standards
 npm run check-format ||
