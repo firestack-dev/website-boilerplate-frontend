@@ -16,6 +16,7 @@ const Meta = ({ title, description, keywords, url }: Props) => {
       <meta name='MobileOptimized' content='320' />
       <meta name='HandheldFriendly' content='true' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0 maximum-scale=1' />
+      <meta name='application-name' content={title} />
 
       {/* basic */}
       <title>{title}</title>
@@ -23,16 +24,25 @@ const Meta = ({ title, description, keywords, url }: Props) => {
       <meta name='keywords' content={keywords} />
       <link rel='canonical' href={url} />
 
-      {/* icons */}
-      <link rel='apple-touch-icon' href='' />
-      <link rel='icon' href='' />
-      <link rel='shortcut icon' href='' />
+      {/* icons all browsers */}
+      <link rel='icon' type='image/png' sizes='32x32' href='/icons/' />
+      <link rel='icon' type='image/png' sizes='16x16' href='/icons/' />
+
+      {/* icons google and chrome*/}
+      <link rel='icon' type='image/png' sizes='48x48' href='/icons/' />
+      <link rel='icon' type='image/png' sizes='192x192' href='/icons/' />
+
+      {/* icon ipad*/}
+      <link rel='apple-touch-icon' type='image/png' sizes='167x167' href='/icons/' />
+
+      {/* icon iphone */}
+      <link rel='apple-touch-icon' type='image/png' sizes='180x180' href='/icons/' />
 
       {/* preload/prefetch (if needed) */}
       {/* <link rel='preload' href='' as='' />
       <link rel='prefetch' href='' as='' /> */}
 
-      {/* open graph/social media */}
+      {/* open graph / social media */}
       <meta property='og:type' content='website' />
       <meta property='og:title' content={title} />
       <meta property='og:description' content={description} />

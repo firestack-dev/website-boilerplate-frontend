@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
+import Meta from '../components/default/Meta';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Meta title='Site Name | Home' />
+      home component here
+    </>
   );
 };
 
