@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 // Custom 404 page any
-const Custom404: NextPage = () => {
+const Custom404Page: NextPage = () => {
   return (
     <div>
       <h1>Page Not Found</h1>
@@ -9,4 +9,4 @@ const Custom404: NextPage = () => {
   );
 };
 
-export default Custom404;
+export default Custom404Page;

@@ -5,9 +5,10 @@ type Props = {
   description: string;
   keywords: string;
   url: string;
+  image: string;
 };
 
-const Meta = ({ title, description, keywords, url }: Props) => {
+const Meta = ({ title, description, keywords, url, image }: Props) => {
   return (
     <Head>
       {/* default */}
@@ -48,7 +49,7 @@ const Meta = ({ title, description, keywords, url }: Props) => {
       <meta property='og:description' content={description} />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
-      <meta property='og:image' content='' />
+      <meta property='og:image' content={image} />
       <meta property='og:url' content={url} />
       <meta property='og:locale' content='en_US' />
       <meta property='og:site_name' content={title} />
@@ -56,7 +57,7 @@ const Meta = ({ title, description, keywords, url }: Props) => {
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:description' content={description} />
-      <meta name='twitter:image' content='' />
+      <meta name='twitter:image' content={image} />
       <meta name='twitter:image:alt' content={title} />
       <meta name='twitter:url' content={url} />
     </Head>
@@ -68,6 +69,7 @@ Meta.defaultProps = {
   description: '',
   keywords: '',
   url: '',
+  image: '',
 };
 
 export default Meta;

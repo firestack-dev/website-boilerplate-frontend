@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Meta from '../components/default/Meta';
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Meta title='Site Name | Home' />
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;
