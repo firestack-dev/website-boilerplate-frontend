@@ -8,9 +8,9 @@ type Props = {
 const Mobile = ({ setIsOpen }: Props) => {
   console.log(setIsOpen);
   return (
-    <nav className={s.mobile}>
+    <div className={s.mobile}>
       <p>Mobile Nav Content Here</p>
-    </nav>
+    </div>
   );
 };
 
